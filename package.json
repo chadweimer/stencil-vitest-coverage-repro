@@ -36,6 +36,7 @@
     "start": "stencil build --dev --watch --serve",
     "test": "stencil-test",
     "test:watch": "stencil-test --watch",
+    "cover:spec": "stencil-test --project spec --coverage",
     "generate": "stencil generate"
   },
   "devDependencies": {
@@ -43,6 +44,7 @@
     "@stencil/vitest": "latest",
     "@types/node": "^22.13.5",
     "@vitest/browser-playwright": "^4.0.17",
+    "@vitest/coverage-v8": "4.0.17",
     "vitest": "^4.0.17"
   },
   "license": "MIT"
