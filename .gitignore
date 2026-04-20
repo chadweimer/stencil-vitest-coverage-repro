@@ -19,6 +19,7 @@ log.txt
 .versions/
 node_modules/
 $RECYCLE.BIN/
+.pnpm-store/
 
 .DS_Store
 Thumbs.db

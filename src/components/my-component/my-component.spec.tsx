@@ -1,4 +1,5 @@
 import { render, h, describe, it, expect } from '@stencil/vitest';
+import './my-component';
 
 describe('my-component (spec)', () => {
   it('renders with shadow root', async () => {
@@ -37,7 +38,7 @@ describe('my-component (spec)', () => {
               </button>
             </div>
             <div class="counter">
-              <button class="decrement-btn" disabled="">
+              <button class="decrement-btn" disabled>
                 -
               </button>
               <span class="count">

@@ -1,4 +1,5 @@
 import { defineVitestConfig } from '@stencil/vitest/config';
+import { stencilVitestPlugin } from '@stencil/vitest/plugin';
 // import { playwright } from '@vitest/browser-playwright';
 
 export default defineVitestConfig({
@@ -16,16 +17,17 @@ export default defineVitestConfig({
 
       /** Spec tests - via a node DOM of your choice */
       {
+        plugins: [stencilVitestPlugin({ css: true })],
         test: {
           name: 'spec',
           include: ['src/**/*.spec.{ts,tsx}'],
-          setupFiles: ['./vitest-setup.ts'],
+          //setupFiles: ['./vitest-setup.ts'],
           environment: 'stencil',
         },
       },
 
       /** Browser tests */
-      // // These cannot work in a codesandbox container. 
+      // // These cannot work in a codesandbox container.
       // // Only enable if running locally.
       // {
       //   test: {

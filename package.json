@@ -42,10 +42,10 @@
   "devDependencies": {
     "@stencil/core": "latest",
     "@stencil/vitest": "latest",
-    "@types/node": "^22.13.5",
-    "@vitest/browser-playwright": "^4.0.17",
+    "@types/node": "^22.19.17",
+    "@vitest/browser-playwright": "^4.1.4",
     "@vitest/coverage-v8": "4.0.17",
-    "vitest": "^4.0.17"
+    "vitest": "^4.1.4"
   },
   "license": "MIT"
 }
