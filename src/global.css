@@ -1,3 +1,6 @@
+/** Core CSS required for ionic components to work property */
+@import '~@ionic/core/css/core.css';
+
 body {
     font-size: 16px;
 }
